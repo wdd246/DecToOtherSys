@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <script>
+        
+        var wynikb=new Array();
+        var wynikt=new Array();
+        var wynikq=new Array();
+        var wynikp=new Array();
+        var wyniks=new Array();
+        var wyniksi=new Array();
+        var wynike=new Array();
+        var wynikn=new Array();
+        var wynikt=new Array();
+        var i=0;
+        
+    function binary(bin){
+        do{
+            document.write(bin+" | "+bin%2+"<br>");
+            wynikb[i] = bin%2;
+            bin=bin/2;
+            bin=parseInt(bin);
+            i++;
+        }while(bin>=1 );
+        document.write(0+"<br>");
+            /* 
+            wynik[wynik.length]=0;
+            if(wynik[0]==0){
+               wynik.splice(0,1);
+            } 
+            */
+
+        wynikb.reverse();
+        document.write(wynikb+"<br><br>");
+    }
+        
+    function triple(tri){
+        do{
+            document.write(tri+" | "+tri%3+"<br>");
+            wynikt[i] = tri%3;
+            tri=tri/3;
+            tri=parseInt(tri);
+            i++;
+        }while(tri>=1 );
+        document.write(0+"<br>");
+            /* 
+            wynik[wynik.length]=0;
+            if(wynik[0]==0){
+               wynik.splice(0,1);
+            } 
+            */
+
+        wynikt.reverse();
+        wynikt = wynikt.filter(function(n){ return n != undefined });
+        document.write(wynikt+"<br><br>");
+    }
+        
+    function quadra(qua){
+        do{
+            document.write(qua+" | "+qua%4+"<br>");
+            wynikq[i] = qua%4;
+            qua=qua/4;
+            qua=parseInt(qua);
+            i++;
+        }while(qua>=1 );
+        document.write(0+"<br>");
+            /* 
+            wynik[wynik.length]=0;
+            if(wynik[0]==0){
+               wynik.splice(0,1);
+            } 
+            */
+
+        wynikq.reverse();
+        wynikq = wynikq.filter(function(n){ return n != undefined });
+        document.write(wynikq+"<br><br>");
+    }
+        
+    function penta(pen){
+        do{
+            document.write(pen+" | "+pen%5+"<br>");
+            wynikp[i] = pen%5;
+            pen=pen/5;
+            pen=parseInt(pen);
+            i++;
+        }while(pen>=1 );
+        document.write(0+"<br>");
+            /* 
+            wynik[wynik.length]=0;
+            if(wynik[0]==0){
+               wynik.splice(0,1);
+            } 
+            */
+
+        wynikp.reverse();
+        wynikp = wynikp.filter(function(n){ return n != undefined });
+        document.write(wynikp+"<br><br>");
+    }
+    function sechsta(sech){
+        do{
+            document.write(sech+" | "+sech%6+"<br>");
+            wyniks[i] = sech%6;
+            sech=sech/6;
+            sech=parseInt(sech);
+            i++;
+        }while(sech>=1 );
+        document.write(0+"<br>");
+            /* 
+            wynik[wynik.length]=0;
+            if(wynik[0]==0){
+               wynik.splice(0,1);
+            } 
+            */
+
+        wyniks.reverse();
+        wyniks = wyniks.filter(function(n){ return n != undefined });
+        document.write(wyniks+"<br><br>");
+    }
+        
+    function siebta(sie){
+        do{
+            document.write(sie+" | "+sie%7+"<br>");
+            wyniksi[i] = sie%7;
+            sie=sie/7;
+            sie=parseInt(sie);
+            i++;
+        }while(sie>=1 );
+        document.write(0+"<br>");
+            /* 
+            wynik[wynik.length]=0;
+            if(wynik[0]==0){
+               wynik.splice(0,1);
+            } 
+            */
+
+        wyniksi.reverse();
+        wyniksi = wyniksi.filter(function(n){ return n != undefined });
+        document.write(wyniksi+"<br><br>");
+    }
+        
+    function eighta(eig){
+        do{
+            document.write(eig+" | "+eig%8+"<br>");
+            wynike[i] = eig%8;
+            eig=eig/8;
+            eig=parseInt(eig);
+            i++;
+        }while(eig>=1 );
+        document.write(0+"<br>");
+            /* 
+            wynik[wynik.length]=0;
+            if(wynik[0]==0){
+               wynik.splice(0,1);
+            } 
+            */
+
+        wynike.reverse();
+        wynike = wynike.filter(function(n){ return n != undefined });
+        document.write(wynike+"<br><br>");
+    }
+        
+    function neinta(nin){
+        do{
+            document.write(nin+" | "+nin%9+"<br>");
+            wynikn[i] = nin%9;
+            nin=nin/9;
+            nin=parseInt(nin);
+            i++;
+        }while(nin>=1 );
+        document.write(0+"<br>");
+            /* 
+            wynik[wynik.length]=0;
+            if(wynik[0]==0){
+               wynik.splice(0,1);
+            } 
+            */
+
+        wynikn.reverse();
+        wynikn = wynikn.filter(function(n){ return n != undefined });
+        document.write(wynikn+"<br><br>");
+    }
+        
+    function tepta(ten){
+        do{
+            document.write(ten+" | "+ten%10+"<br>");
+            wynikt[i] = ten%10;
+            ten=ten/10;
+            ten=parseInt(ten);
+            i++;
+        }while(ten>=1 );
+        document.write(0+"<br>");
+            /* 
+            wynik[wynik.length]=0;
+            if(wynik[0]==0){
+               wynik.splice(0,1);
+            } 
+            */
+
+        wynikt.reverse();
+        wynikt = wynikt.filter(function(n){ return n != undefined });
+        document.write(wynikt+"<br><br>");
+    }
+        
+    </script>
+</head>
+
+<body>
+
+    <script>    
+        var liczba = parseInt(prompt("Wpisz liczbe dziesiętną"));
+        var system = prompt("Wpisz liczbowo system docelowy");
+        
+        if(system=="2"){
+            binary(liczba);
+        }
+        if(system=="3"){
+            triple(liczba);
+        }
+        if(system=="4"){
+            quadra(liczba);
+        }
+        if(system=="5"){
+            penta(liczba);
+        }
+        if(system=="6"){
+            sechsta(liczba);
+        }
+        if(system=="7"){
+            siebta(liczba);
+        }
+        if(system=="8"){
+            eighta(liczba);
+        }
+        if(system=="9"){
+            neinta(liczba);
+        }
+        if(system=="10"){
+            tepta(liczba);
+        }
+        
+        
+        
+        
+        
+        
+    </script>
+
+</body>
+
+</html>
